@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Register for TechCon 2024</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Index</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="/submit-form" method="post">
+            <label for="username">Username (4-8 characters) :</label>
+            <input type="text" id="username" name="username" required minlength="5" maxlength="9" placeholder="Username">
+            <label for="password">Password :</label>
+            <input type="password" id="password" name="password" required minlength="4" placeholder="Password">
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required placeholder="johndoe@gmail.com">
+            <label for="age">Age (18-35 years) :</label>
+            <input type="age" id="age" name="age" optional minvalue="18" maxvalue="35" placeholder="Age">
+            <label for="Terms of Service">Terms of Service :</label>
+            <input type="checkbox" id="checkbox" name="checkbox" required placeholder="checkbox">
+            <button type="submit">Submit</button>
+        </form> 
+    </main>
+    <footer>copyright - &copy;2024 techcon2024</footer>
+</body>
+</html>
